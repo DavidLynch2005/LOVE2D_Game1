@@ -10,7 +10,7 @@ end
 local count = 0;
 
 function love.load()
-    
+    love.window.setMode(1280, 720)
 end
 
 
@@ -46,7 +46,7 @@ end
 function love.mousepressed(x, y, button, istouch, presses)
     if button == 1 then
         count = count + 1;
-        createClickEffect()
+        --createClickEffect()
     elseif button == 2 then
        
     end
